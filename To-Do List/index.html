@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div id="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="task" placeholder="Add a new task">
+        <button id="addTask">Add</button>
+        <ul id="taskList">
+        </ul>
+    </div>
+    <div class="popup" id="editPopup">
+        <div class="popup-content">
+            <h2>Edit Task</h2>
+            <input type="text" id="editedTask">
+            <button class="popup-save-button" id="saveEditedTask">Save</button>
+            <button class="popup-cancel-button" id="cancelEdit">Cancel</button>
+        </div>
+    </div>
+
+    <script src="todo.js">
+    </script>
+</body>
+</html>

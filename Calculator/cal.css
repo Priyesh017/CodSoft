@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1
+{
+    text-align: center;
+    padding: 0.5rem;
+}
+.container 
+{
+    box-shadow: 0.2rem 0.2rem grey;
+    border: 10px solid;
+    border-radius: 1rem;
+    width: 30vw;
+    height: 60vh;
+    margin: auto;
+    background-color: black;
+}
+.inp
+{
+    display: flex;
+    justify-content: center;
+}
+.inp input
+{
+    text-align: right;
+    width: 95%;
+    height: 4rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+}
+.buttonbox{
+    margin: 1.1rem auto;
+    width: 95%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+.btn
+{
+    box-shadow: 0.1rem 0.1rem white;
+    font-size: 1.5rem;
+    background-color: rgb(65, 61, 61);
+    color: white;
+    border-radius: 0.5rem;
+
+}

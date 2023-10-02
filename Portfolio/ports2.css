@@ -1,0 +1,170 @@
+@media screen and (max-width: 1400px) {
+    #profile{
+        height: 100vh;
+        margin-bottom: 1rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1200px) {
+    html {
+        scroll-behavior: smooth;
+        width: fit-content;
+        overflow-x: hidden;
+    }
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    #profile, .section-container , #about, #experience, #projects, #contacts{
+        display: block;
+        width: 100%;
+    }
+    /* #experience, .experience-details-container { */
+        /* margin-top: 2rem; */
+    /* } */
+    .arrow-icon {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    #profile .pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .section-container {
+        margin: auto;
+        width: 100%;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+    #about .pic-container {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        height: 0%;
+        width: 100%;
+    }
+    .aboutpic {
+        height: 205px;
+        width: 205px;
+        border-radius: 50%;
+    }
+    #experience .title {
+        width: fit-content;
+        padding: 0 12%;
+    }
+    footer {
+        height: 10vh;
+    }
+    footer nav {
+        display: none;
+    }
+    footer p {
+        width: 100%;
+        padding: 0 6%;
+    }
+}
+@media screen and (max-width: 720px) {
+    #profile {
+        height: 100%;
+        margin-top: 10%;
+    }
+    /* ABOUT */
+    #about {
+        height: 100%;
+        width: 100%;
+    }
+    .about-containers {
+        margin: 0.5rem;
+    }
+    .details-container {
+        padding: 0.7rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    /* EXPERIENCE */
+    #experience {
+        height: 100%;
+        width: 40%;
+        margin: 3rem 25vw 0 25vw;
+        padding: 0;
+    }
+    #experience .experience-details-container {
+        /* align-items: center; */
+        width: 170%;
+    }
+    article {
+        justify-content: flex-start;
+    }
+    /* PROJECTS */
+    #projects {
+        /* width: 100%; */
+        height: 100%;
+    }
+    #projects .experience-details-container {
+        align-items: center;
+        width: 100%;
+    }
+    #projects .about-containers {
+        align-items: center;
+        width: fit-content;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .color-container {
+        width: 85%;
+    }
+    /* CONTACTS */
+    #contacts {
+        margin-top: 5rem;
+        height: 40%;
+    }
+    .contact-info-upper-container {
+        width: 85%;
+    }
+    .contact-info-container {
+        margin: 1rem 0.5rem;
+        gap: 0;
+    }
+    .contact-info-container p {
+        font-size: 0.9rem;
+    }
+    li {
+        font-size: 1.2rem;
+    }
+    /* #hamburger-nav { */
+        /* background-color: white; */
+        /* position: sticky; */
+        /* top: 0%; */
+        /* gap: 3rem; */
+    /* } */
+    #hamburger-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        gap: 3rem;
+        width: 100%;
+        height: 6%;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+        transition: 0.3s;
+    }
+    #hamburger-nav.sticky {
+        background: var(--bg-color);
+    }
+}
